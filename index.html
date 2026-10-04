@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jithesh Reddy M, senior frontend engineer</title>
+  <meta name="description" content="Jithesh Reddy M is a senior software engineer at Freshworks in Chennai, building the chat widget and its admin-side features with React. Earlier, at Mr. Cooper, he built payment flows.">
+  <meta name="theme-color" content="#EEF3F1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A1B22" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Jithesh Reddy M, senior frontend engineer">
+  <meta property="og:description" content="Senior software engineer at Freshworks in Chennai, building the chat widget and its admin-side features with React. Earlier at Mr. Cooper: payment flows.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Set the theme before first paint so there is no flash. -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+  <header class="site-header" data-header>
+    <div class="wrap site-header__in">
+      <a class="wordmark" href="#top" aria-label="Jithesh Reddy M, back to top">
+        <span class="wordmark__dot" aria-hidden="true"></span>Jithesh Reddy M
+      </a>
+      <nav class="nav" aria-label="Sections" data-nav>
+        <span class="nav__pill" aria-hidden="true" data-nav-pill></span>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Dark theme" title="Switch to dark theme" data-theme-toggle>
+        <svg class="theme-switch__sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+        <svg class="theme-switch__moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__name">
+            <span class="line"><span class="line__in" style="--d:80">Jithesh</span></span>
+            <span class="line"><span class="line__in" style="--d:170">Reddy M</span></span>
+          </h1>
+          <p class="hero__lede rise" style="--d:420">
+            Senior software engineer at Freshworks in Chennai, building the chat widget and
+            its admin-side features. Earlier, at Mr. Cooper, I built payment flows.
+          </p>
+          <div class="hero__actions rise" style="--d:540">
+            <a class="btn btn--primary" href="mailto:jitheshreddy10@gmail.com">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3.5 6.5h17v11h-17z"/><path d="m4 7 8 6.5L20 7"/></svg>
+              Email me
+            </a>
+            <a class="btn btn--ghost" href="assets/Jithesh-Reddy-M-Resume.pdf" download>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11M7.5 11 12 15.5 16.5 11M5 19.5h14"/></svg>
+              Download resume
+            </a>
+          </div>
+        </div>
+
+        <!-- The chat widget: a working miniature of what I build at Freshworks. -->
+        <div class="widget-stage" data-widget>
+          <section class="widget" id="widget-panel" aria-label="Ask Jithesh, a scripted chat">
+            <header class="widget__head">
+              <span class="avatar" aria-hidden="true">JR</span>
+              <div>
+                <h2 class="widget__title">Ask Jithesh</h2>
+                <p class="widget__status"><span class="widget__live" aria-hidden="true"></span>Scripted replies, real resume</p>
+              </div>
+            </header>
+            <ol class="widget__log" role="log" aria-live="polite" aria-label="Conversation" data-log tabindex="0"></ol>
+            <div class="widget__chips" data-chips aria-label="Questions you can ask"></div>
+          </section>
+          <button class="launcher" type="button" data-launcher aria-expanded="true" aria-controls="widget-panel" aria-label="Close chat">
+            <svg class="launcher__chat" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4.5 5.5h15v10.5h-8L7 19.5V16H4.5z"/></svg>
+            <svg class="launcher__close" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="m6.5 9.5 5.5 5.5 5.5-5.5"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section work" id="work" data-section>
+      <div class="wrap work__grid">
+        <div class="work__aside">
+          <h2 class="section__title" data-reveal="mask">Where I've worked</h2>
+          <p class="section__intro" data-reveal>
+            From a first internship in 2022 to a senior role on the Freshworks widget.
+          </p>
+        </div>
+
+        <div class="timeline" data-timeline>
+          <span class="timeline__fill" aria-hidden="true"></span>
+
+          <article class="job" data-reveal data-node>
+            <header class="job__head">
+              <h3 class="job__company">Freshworks</h3>
+              <p class="job__when">Aug 2025 to present</p>
+            </header>
+            <p class="job__role">Senior Software Engineer, Chennai</p>
+            <ul class="points">
+              <li>Stabilised JWT authentication in the React widget by retrying messages automatically when a token expires, which made delivery far more reliable.</li>
+              <li>Cut Sentry attachment size by more than 50%, lowering storage overhead and making error monitoring more efficient.</li>
+              <li>Worked with the mobile team to reuse the widget on iOS and Android through an iframe integration.</li>
+              <li>Hardened the IP Restriction feature with client-side validation that blocks duplicate entries across four IP types.</li>
+              <li>Added micro-interactions that give the widget smoother transitions.</li>
+            </ul>
+          </article>
+
+          <article class="job" data-reveal data-node>
+            <header class="job__head">
+              <h3 class="job__company">Mr. Cooper</h3>
+              <p class="job__when">Jan 2022 to Jul 2025</p>
+            </header>
+            <p class="job__role">Intern to Software Engineer II, Chennai</p>
+
+            <div class="role">
+              <div class="role__head">
+                <h4>Software Engineer II</h4>
+                <p>Apr 2025 to Jul 2025</p>
+              </div>
+              <ul class="points">
+                <li>Implemented biweekly autopay with React and Redux, so customers can make 26 payments a year.</li>
+                <li>Built a React and Node.js application that serves customers with consumer loans.</li>
+              </ul>
+            </div>
+
+            <div class="role">
+              <div class="role__head">
+                <h4>Software Engineer I</h4>
+                <p>Jul 2022 to Mar 2025</p>
+              </div>
+              <ul class="points">
+                <li>Built multi-factor authentication with React, Redux and Ruby on Rails, securing sign-in for more than 60,000 customers in production.</li>
+                <li>Helped create and launch website services for 5 other companies, adding to the company's revenue.</li>
+                <li>Scheduled quarterly reports on ideas and their statuses to every employee, using Cron and Node APIs.</li>
+              </ul>
+            </div>
+
+            <div class="role">
+              <div class="role__head">
+                <h4>Software Engineer Intern</h4>
+                <p>Jan 2022 to Jun 2022</p>
+              </div>
+              <ul class="points">
+                <li>Wrote automation scripts that generate the files behind white-label website services for other companies.</li>
+                <li>Connected Jenkins build results to Microsoft Teams with webhooks, so every success or failure posts a notification.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills" data-section>
+      <div class="wrap">
+        <h2 class="section__title" data-reveal="mask">What I work with</h2>
+        <dl class="skills__list">
+          <div class="skills__row" data-reveal>
+            <dt>Frameworks and technologies</dt>
+            <dd><span>React</span> <span>TypeScript</span> <span>Next.js</span> <span>Redux</span> <span>Node.js</span> <span>Ruby on Rails</span></dd>
+          </div>
+          <div class="skills__row" data-reveal>
+            <dt>Languages</dt>
+            <dd><span>JavaScript</span> <span>HTML/CSS</span> <span>SQL</span> <span>Java</span> <span>C++</span></dd>
+          </div>
+          <div class="skills__row" data-reveal>
+            <dt>AI tools</dt>
+            <dd><span>Claude</span> <span>Cursor</span> <span>Copilot</span> <span>Kiro</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Certifications and recognition -->
+    <section class="section certifications" id="certifications" data-section>
+      <div class="wrap">
+        <h2 class="section__title" data-reveal="mask">Certifications</h2>
+        <div class="certs">
+          <article class="cert cert--main" data-reveal data-tilt>
+            <span class="cert__seal" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path d="m6 12.5 4 4 8-9"/></svg>
+            </span>
+            <h3>Claude Certified Developer - Foundations</h3>
+            <p class="cert__issuer">Issued by Anthropic</p>
+            <dl class="cert__dates">
+              <div><dt>Issued</dt><dd>14 Aug 2026</dd></div>
+              <div><dt>Valid until</dt><dd>14 Aug 2027</dd></div>
+            </dl>
+            <div class="cert__actions">
+              <a class="btn btn--primary btn--small" href="https://www.credly.com/badges/500de7a0-c36f-471c-97e4-b31ba81c2a9d" target="_blank" rel="noopener">Verify on Credly</a>
+              <a class="link" href="assets/Claude-Certified-Developer-Foundations.pdf" target="_blank" rel="noopener">View certificate (PDF)</a>
+            </div>
+          </article>
+          <article class="cert" data-reveal>
+            <h3>Programming in Java</h3>
+            <p class="cert__issuer">National Programme on Technology Enhanced Learning (NPTEL)</p>
+          </article>
+          <article class="cert" data-reveal>
+            <h3>Social Networks</h3>
+            <p class="cert__issuer">National Programme on Technology Enhanced Learning (NPTEL)</p>
+          </article>
+        </div>
+
+        <div class="recognition">
+          <h3 class="recognition__title" data-reveal>Recognition</h3>
+          <ul class="recognition__list">
+            <li data-reveal>
+              <strong>Rookie Rockstar, Freshworks</strong>
+              <span>Awarded for impactful contributions to the widget within my first month.</span>
+            </li>
+            <li data-reveal>
+              <strong><span data-count="700" data-suffix="+">700+</span> problems solved on LeetCode</strong>
+              <span>Regular practice in problem solving and algorithms.</span>
+            </li>
+            <li data-reveal>
+              <strong>2nd place, Code IT</strong>
+              <span>Intra-college coding competition run by SSN's Department of Information Technology.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects" data-section>
+      <div class="wrap">
+        <h2 class="section__title" data-reveal="mask">Side projects</h2>
+        <div class="projects__grid">
+          <article class="project" data-reveal data-spot>
+            <div class="project__art project__art--blog" aria-hidden="true">
+              <div class="post"><i></i><b></b><b></b></div>
+              <div class="post"><i></i><b></b><b></b></div>
+              <div class="post"><i></i><b></b><b></b></div>
+            </div>
+            <div class="project__body">
+              <p class="project__when">May 2021</p>
+              <h3>Blog website</h3>
+              <p>
+                A blogging app where people publish and delete their own posts and read everyone
+                else's. Accounts are created through a sign-in form, and passwords are stored encrypted.
+              </p>
+              <ul class="tags" aria-label="Built with">
+                <li>MongoDB</li><li>Express</li><li>Node.js</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" data-reveal data-spot>
+            <div class="project__art project__art--paddy" aria-hidden="true">
+              <svg viewBox="0 0 320 150" preserveAspectRatio="xMidYMid meet">
+                <g class="dots" data-dots></g>
+              </svg>
+              <ul class="legend">
+                <li class="k0">Healthy</li><li class="k1">Disease 1</li><li class="k2">Disease 2</li><li class="k3">Disease 3</li>
+              </ul>
+            </div>
+            <div class="project__body">
+              <p class="project__when">June 2022</p>
+              <h3>Paddy disease detection</h3>
+              <p>
+                A machine learning model that sorts paddy leaves into healthy or one of three diseases.
+                K-Means clusters the data by disease type. Trained on Kaggle datasets, it scored over
+                90% accuracy on real-life samples.
+              </p>
+              <ul class="tags" aria-label="Built with">
+                <li>Machine learning</li><li>K-Means</li><li>Kaggle datasets</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section education" id="education" data-section>
+      <div class="wrap">
+        <h2 class="section__title" data-reveal="mask">Education</h2>
+        <div class="edu">
+          <article class="edu__item" data-reveal>
+            <p class="edu__when">Aug 2018 to May 2022</p>
+            <div>
+              <h3 class="edu__school">SSN College of Engineering</h3>
+              <p class="edu__course">B.Tech in Information Technology</p>
+            </div>
+            <p class="edu__score"><span data-count="8.9" data-decimals="1">8.9</span> <small>CGPA out of 10</small></p>
+          </article>
+
+          <article class="edu__item" data-reveal>
+            <p class="edu__when">Jun 2017 to Apr 2018</p>
+            <div>
+              <h3 class="edu__school">Bethel Matriculation Higher Secondary School</h3>
+              <p class="edu__course">Class XII</p>
+              <ul class="points">
+                <li>Centum in Maths and in Computer Science.</li>
+                <li>1st in the Maths Olympiad and 3rd in the Science Olympiad.</li>
+              </ul>
+            </div>
+            <p class="edu__score"><span data-count="96.83" data-decimals="2" data-suffix="%">96.83%</span> <small>1162 out of 1200</small></p>
+          </article>
+
+          <article class="edu__item" data-reveal>
+            <p class="edu__when">Jun 2015 to Apr 2016</p>
+            <div>
+              <h3 class="edu__school">Peniel Matriculation Higher Secondary School</h3>
+              <p class="edu__course">Class X</p>
+              <ul class="points">
+                <li>Centum in Maths.</li>
+              </ul>
+            </div>
+            <p class="edu__score"><span data-count="97.4" data-decimals="1" data-suffix="%">97.4%</span> <small>487 out of 500</small></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" data-section>
+      <div class="wrap">
+        <h2 class="section__title" data-reveal="mask">Get in touch</h2>
+        <p class="section__intro" data-reveal>Email is the quickest way to reach me. A call works too.</p>
+        <div class="contact__mail" data-reveal>
+          <a class="contact__address" href="mailto:jitheshreddy10@gmail.com">jitheshreddy10<wbr>@gmail.com</a>
+          <button class="btn btn--ghost btn--small copy" type="button" data-copy="jitheshreddy10@gmail.com">
+            <svg class="copy__icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+              <g class="copy__sheets"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5v-2a2 2 0 0 0-2-2h-7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2"/></g>
+              <path class="copy__tick" d="m5.5 12.5 4.5 4.5 8.5-9.5" pathLength="1"/>
+            </svg>
+            <span data-copy-label aria-live="polite">Copy address</span>
+          </button>
+        </div>
+        <ul class="contact__links" data-reveal>
+          <li><a class="link" href="tel:+918610107428">+91 86101 07428</a></li>
+          <li><a class="link" href="https://www.linkedin.com/in/jithesh-reddy-66a58a18a" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a class="link" href="https://github.com/jithesh10" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="link" href="assets/Jithesh-Reddy-M-Resume.pdf" download>Resume (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__in">
+      <p>© 2026 Jithesh Reddy M</p>
+      <a class="link" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/widget.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
